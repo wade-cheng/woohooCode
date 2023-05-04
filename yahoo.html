@@ -1,0 +1,40 @@
+<div id="main" style="font-size: 500%;display: none;align-items: center;justify-content: center;width:100%;height: 90%;">
+    <p style="">woohoo code </p>
+    <img src="bran.jpg">
+</div>
+
+
+<img id="confetti" style="display: block;" src="confetti.gif">
+<img id="popper1" style="float:right;" src="popper.png">
+<img id="popper2" style="float:up;" src="popper.png">
+<img id="popper3" style="float:down;" src="popper.png">
+<img id="popper4" style="float:left;" src="popper.png">
+<marquee id="marquee">
+  <img src="popper.png">
+  <img src="popper.png">
+  <img src="popper.png">
+  <img src="popper.png">
+  <img src="popper.png">
+  <img src="popper.png">
+  <img src="popper.png">
+  <img src="popper.png">
+</marquee>
+<script>
+function toggleShow(element) {
+  var x = document.getElementById(element);
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function toggleShowMain() {
+  var x = document.getElementById("main");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<button onclick="toggleShow('confetti');toggleShowMain();toggleShow('popper1');toggleShow('popper2');toggleShow('popper3');toggleShow('popper4');toggleShow('marquee');">Celebrate here!</button>
